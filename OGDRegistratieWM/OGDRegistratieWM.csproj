@@ -1,0 +1,229 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3F9D71A0-8D29-4DDE-9C0E-3183E2D73DAC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OGDRegistratieWM</RootNamespace>
+    <AssemblyName>OGDRegistratieWM</AssemblyName>
+    <ProjectTypeGuids>{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>PocketPC</PlatformFamilyName>
+    <PlatformID>b2c48bd2-963d-4549-9169-1fa021dce484</PlatformID>
+    <OSVersion>5.2</OSVersion>
+    <DeployDirSuffix>OGDRegistratieWM</DeployDirSuffix>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <NativePlatformName>Windows Mobile 6 Professional SDK</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.0.0, Culture=neutral, PublicKeyToken=3be235df1c8d2ad3, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Beheer\AdresEditViewDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Beheer\AdresEditViewDialog.Designer.cs">
+      <DependentUpon>AdresEditViewDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Beheer\AdresSummaryViewDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Beheer\AdresSummaryViewDialog.Designer.cs">
+      <DependentUpon>AdresSummaryViewDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Beheer\AdresIndexForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Beheer\AdresIndexForm.Designer.cs">
+      <DependentUpon>AdresIndexForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Beheer\ProjectIndexForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Beheer\ProjectIndexForm.Designer.cs">
+      <DependentUpon>ProjectIndexForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Beheer\RitIndexForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Beheer\RitIndexForm.Designer.cs">
+      <DependentUpon>RitIndexForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Beheer\VervoermiddelIndexForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Beheer\VervoermiddelIndexForm.Designer.cs">
+      <DependentUpon>VervoermiddelIndexForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OGDRegistratieDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OGDRegistratieDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Beheer\ProjectEditViewDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Beheer\ProjectEditViewDialog.Designer.cs">
+      <DependentUpon>ProjectEditViewDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Beheer\ProjectSummaryViewDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Beheer\ProjectSummaryViewDialog.Designer.cs">
+      <DependentUpon>ProjectSummaryViewDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Beheer\AdresEditViewDialog.resx">
+      <DependentUpon>AdresEditViewDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Beheer\AdresSummaryViewDialog.resx">
+      <DependentUpon>AdresSummaryViewDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Beheer\AdresIndexForm.resx">
+      <DependentUpon>AdresIndexForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Beheer\ProjectIndexForm.resx">
+      <DependentUpon>ProjectIndexForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Beheer\RitIndexForm.resx">
+      <DependentUpon>RitIndexForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Beheer\VervoermiddelIndexForm.resx">
+      <DependentUpon>VervoermiddelIndexForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Beheer\ProjectEditViewDialog.resx">
+      <DependentUpon>ProjectEditViewDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Beheer\ProjectSummaryViewDialog.resx">
+      <DependentUpon>ProjectSummaryViewDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Beheer\RitEditViewDialog.resx">
+      <DependentUpon>RitEditViewDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Beheer\RitSummaryViewDialog.resx">
+      <DependentUpon>RitSummaryViewDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Beheer\VervoermiddelEditViewDialog.resx">
+      <DependentUpon>VervoermiddelEditViewDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Beheer\VervoermiddelSummaryViewDialog.resx">
+      <DependentUpon>VervoermiddelSummaryViewDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Beheer\RitEditViewDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Beheer\RitEditViewDialog.Designer.cs">
+      <DependentUpon>RitEditViewDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Beheer\RitSummaryViewDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Beheer\RitSummaryViewDialog.Designer.cs">
+      <DependentUpon>RitSummaryViewDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Beheer\VervoermiddelEditViewDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Beheer\VervoermiddelEditViewDialog.Designer.cs">
+      <DependentUpon>VervoermiddelEditViewDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Beheer\VervoermiddelSummaryViewDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Beheer\VervoermiddelSummaryViewDialog.Designer.cs">
+      <DependentUpon>VervoermiddelSummaryViewDialog.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="OGDRegistratie.sdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="OGDRegistratieDataSet.xsc">
+      <DependentUpon>OGDRegistratieDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OGDRegistratieDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OGDRegistratieDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OGDRegistratieDataSet.xss">
+      <DependentUpon>OGDRegistratieDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

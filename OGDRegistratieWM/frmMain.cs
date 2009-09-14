@@ -19,6 +19,7 @@ namespace OGDRegistratieWM
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            
             //label1.Text = "";
             //var ds = new OGDRegistratieDataSet();
             //(new OGDRegistratieDataSetTableAdapters.AdresTableAdapter()).Fill(ds.Adres);
@@ -38,32 +39,39 @@ namespace OGDRegistratieWM
             //}
         }
 
-        private void mniAdressen_Click(object sender, EventArgs e)
+        private void mniAdressenBeheer_Click(object sender, EventArgs e)
         {
             var adresIndexForm = new AdresIndexForm();
             adresIndexForm.ShowDialog();
             adresIndexForm.Dispose();
         }
 
-        private void mniProjecten_Click(object sender, EventArgs e)
+        private void mniProjectenBeheer_Click(object sender, EventArgs e)
         {
             var projectIndexForm = new ProjectIndexForm();
             projectIndexForm.ShowDialog();
             projectIndexForm.Dispose();
         }
 
-        private void mniRitten_Click(object sender, EventArgs e)
+        private void mniRittenBeheer_Click(object sender, EventArgs e)
         {
             var ritIndexForm = new RitIndexForm();
             ritIndexForm.ShowDialog();
             ritIndexForm.Dispose();
         }
 
-        private void mniVervoermiddelen_Click(object sender, EventArgs e)
+        private void mniVervoermiddelenBeheer_Click(object sender, EventArgs e)
         {
             var vervoermiddelIndexForm = new VervoermiddelIndexForm();
             vervoermiddelIndexForm.ShowDialog();
             vervoermiddelIndexForm.Dispose();
+        }
+
+        private void mniRitRegistratie_Click(object sender, EventArgs e)
+        {
+            var ritRegistratieForm = new RitRegistratieForm();
+            ritRegistratieForm.ShowDialog();
+            ritRegistratieForm.Dispose();
         }
     }
 }

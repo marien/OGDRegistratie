@@ -30,56 +30,69 @@
         private void InitializeComponent()
         {
             this.mainMenu1 = new System.Windows.Forms.MainMenu();
-            this.menuItem1 = new System.Windows.Forms.MenuItem();
-            this.menuItem2 = new System.Windows.Forms.MenuItem();
-            this.menuItem3 = new System.Windows.Forms.MenuItem();
-            this.mniAdressen = new System.Windows.Forms.MenuItem();
-            this.mniProjecten = new System.Windows.Forms.MenuItem();
-            this.mniRitten = new System.Windows.Forms.MenuItem();
-            this.mniVervoermiddelen = new System.Windows.Forms.MenuItem();
+            this.mniBlank = new System.Windows.Forms.MenuItem();
+            this.mniTools = new System.Windows.Forms.MenuItem();
+            this.mniBeheer = new System.Windows.Forms.MenuItem();
+            this.mniAdressenBeheer = new System.Windows.Forms.MenuItem();
+            this.mniProjectenBeheer = new System.Windows.Forms.MenuItem();
+            this.mniRittenBeheer = new System.Windows.Forms.MenuItem();
+            this.mniVervoermiddelenBeheer = new System.Windows.Forms.MenuItem();
+            this.mniRegistratie = new System.Windows.Forms.MenuItem();
+            this.mniRitRegistratie = new System.Windows.Forms.MenuItem();
             this.SuspendLayout();
             // 
             // mainMenu1
             // 
-            this.mainMenu1.MenuItems.Add(this.menuItem1);
-            this.mainMenu1.MenuItems.Add(this.menuItem2);
+            this.mainMenu1.MenuItems.Add(this.mniBlank);
+            this.mainMenu1.MenuItems.Add(this.mniTools);
             // 
-            // menuItem1
+            // mniBlank
             // 
-            this.menuItem1.Text = " ";
+            this.mniBlank.Text = " ";
             // 
-            // menuItem2
+            // mniTools
             // 
-            this.menuItem2.MenuItems.Add(this.menuItem3);
-            this.menuItem2.Text = "Tools";
+            this.mniTools.MenuItems.Add(this.mniBeheer);
+            this.mniTools.MenuItems.Add(this.mniRegistratie);
+            this.mniTools.Text = "Tools";
             // 
-            // menuItem3
+            // mniBeheer
             // 
-            this.menuItem3.MenuItems.Add(this.mniAdressen);
-            this.menuItem3.MenuItems.Add(this.mniProjecten);
-            this.menuItem3.MenuItems.Add(this.mniRitten);
-            this.menuItem3.MenuItems.Add(this.mniVervoermiddelen);
-            this.menuItem3.Text = "Beheer";
+            this.mniBeheer.MenuItems.Add(this.mniAdressenBeheer);
+            this.mniBeheer.MenuItems.Add(this.mniProjectenBeheer);
+            this.mniBeheer.MenuItems.Add(this.mniRittenBeheer);
+            this.mniBeheer.MenuItems.Add(this.mniVervoermiddelenBeheer);
+            this.mniBeheer.Text = "Beheer";
             // 
-            // mniAdressen
+            // mniAdressenBeheer
             // 
-            this.mniAdressen.Text = "Adressen";
-            this.mniAdressen.Click += new System.EventHandler(this.mniAdressen_Click);
+            this.mniAdressenBeheer.Text = "Adressen";
+            this.mniAdressenBeheer.Click += new System.EventHandler(this.mniAdressenBeheer_Click);
             // 
-            // mniProjecten
+            // mniProjectenBeheer
             // 
-            this.mniProjecten.Text = "Projecten";
-            this.mniProjecten.Click += new System.EventHandler(this.mniProjecten_Click);
+            this.mniProjectenBeheer.Text = "Projecten";
+            this.mniProjectenBeheer.Click += new System.EventHandler(this.mniProjectenBeheer_Click);
             // 
-            // mniRitten
+            // mniRittenBeheer
             // 
-            this.mniRitten.Text = "Ritten";
-            this.mniRitten.Click += new System.EventHandler(this.mniRitten_Click);
+            this.mniRittenBeheer.Text = "Ritten";
+            this.mniRittenBeheer.Click += new System.EventHandler(this.mniRittenBeheer_Click);
             // 
-            // mniVervoermiddelen
+            // mniVervoermiddelenBeheer
             // 
-            this.mniVervoermiddelen.Text = "Vervoermiddelen";
-            this.mniVervoermiddelen.Click += new System.EventHandler(this.mniVervoermiddelen_Click);
+            this.mniVervoermiddelenBeheer.Text = "Vervoermiddelen";
+            this.mniVervoermiddelenBeheer.Click += new System.EventHandler(this.mniVervoermiddelenBeheer_Click);
+            // 
+            // mniRegistratie
+            // 
+            this.mniRegistratie.MenuItems.Add(this.mniRitRegistratie);
+            this.mniRegistratie.Text = "Registratie";
+            // 
+            // mniRitRegistratie
+            // 
+            this.mniRitRegistratie.Text = "Rit";
+            this.mniRitRegistratie.Click += new System.EventHandler(this.mniRitRegistratie_Click);
             // 
             // frmMain
             // 
@@ -97,13 +110,15 @@
 
         #endregion
 
-        private System.Windows.Forms.MenuItem menuItem1;
-        private System.Windows.Forms.MenuItem menuItem2;
-        private System.Windows.Forms.MenuItem menuItem3;
-        private System.Windows.Forms.MenuItem mniAdressen;
-        private System.Windows.Forms.MenuItem mniProjecten;
-        private System.Windows.Forms.MenuItem mniRitten;
-        private System.Windows.Forms.MenuItem mniVervoermiddelen;
+        private System.Windows.Forms.MenuItem mniBlank;
+        private System.Windows.Forms.MenuItem mniTools;
+        private System.Windows.Forms.MenuItem mniBeheer;
+        private System.Windows.Forms.MenuItem mniAdressenBeheer;
+        private System.Windows.Forms.MenuItem mniProjectenBeheer;
+        private System.Windows.Forms.MenuItem mniRittenBeheer;
+        private System.Windows.Forms.MenuItem mniVervoermiddelenBeheer;
+        private System.Windows.Forms.MenuItem mniRegistratie;
+        private System.Windows.Forms.MenuItem mniRitRegistratie;
 
 
 

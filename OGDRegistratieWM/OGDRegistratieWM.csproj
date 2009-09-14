@@ -164,6 +164,9 @@
     <EmbeddedResource Include="Beheer\VervoermiddelSummaryViewDialog.resx">
       <DependentUpon>VervoermiddelSummaryViewDialog.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="RitRegistratieForm.resx">
+      <DependentUpon>RitRegistratieForm.cs</DependentUpon>
+    </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
@@ -191,6 +194,12 @@
     </Compile>
     <Compile Include="Beheer\VervoermiddelSummaryViewDialog.Designer.cs">
       <DependentUpon>VervoermiddelSummaryViewDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RitRegistratieForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RitRegistratieForm.Designer.cs">
+      <DependentUpon>RitRegistratieForm.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
